@@ -1,23 +1,16 @@
-import logo from './logo.svg';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Navi from './component/Navi';
+import Process from './component/Process';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navi></Navi>
+      <section style={{ height: '100vh'}} id=""></section>
+      <Process id="precss" title="개발자연혁"></Process>
+      <section style={{ height: '100vh'}} id="portfolio" className='border-top bg-light'></section>
+      <section style={{ height: '100vh'}} id="contact" className='border-top'></section>
     </div>
   );
 }
