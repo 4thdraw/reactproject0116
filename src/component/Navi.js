@@ -2,51 +2,12 @@ import React, { useState } from 'react';
 import navicss from '../css/navi.module.css';
 import { Link } from "react-router-dom";
 import Scrollspy from "react-scrollspy";
+import naviDBfile from "../json/navi.json";
 
 function Navi(props) {
     const [ naivText, updateText ] = useState(true);
     // json -> map
-    const naviDBfile = {
-         naviDATA : [
-            {
-                d1 : {
-                    naviText : "취준생! 인사드립니다.",
-                    type : "",
-                    href : "/about",
-                    cls :  ["px-3", "font141618"]
-                }
-                
-            },
-            {
-                d1 : {
-                    naviText : "개발성장과정",
-                    type : "a",
-                    href : "#precss",
-                    cls :  ["px-3", "font141618"]
-                }
-                
-            },
-            {
-                d1 : {
-                    naviText : "결과물",
-                    type : "a",
-                    href : "#portfolio",
-                    cls :  ["px-3", "font141618"]
-                }
-                
-            },
-            {
-                d1 : {
-                    naviText : "연락주세요!",
-                    type : "a",
-                    href : "#contact",
-                    cls :  ["px-3", "font141618"]
-                }
-                
-            }
-         ],
-         sns : []
-    }
+  
 
     return (
         <div className={`${navicss.hd}  border-bottom  py-2  fixed-top`}>
