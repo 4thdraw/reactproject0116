@@ -19,23 +19,7 @@ function Navi(props) {
                     {
                         naviDBfile.naviDATA.map((item, idx)=>{
                             const myclass = item.d1.cls.join(" ");
-                        //     if(item.d1.type){
-                        //         return (
-                        //                 <li key={ 'navi'+idx } className={myclass}>
-                        //                 <a href={item.d1.href} >
-                        //                 {item.d1.naviText}
-                        //                 </a>
-                        //                 </li>
-                        //                 )
-                        //    }else{
-                        //         return (
-                        //             <li key={ 'navi'+idx } className={myclass}>
-                        //             <Link to={item.d1.href} >
-                        //             {item.d1.naviText}
-                        //             </Link>
-                        //             </li>
-                        //         )
-                        //    }
+                       
 
                            return (
                             item.d1.type == !"a" ?
